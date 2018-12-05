@@ -1,0 +1,41 @@
+<div class="col-md-12">
+  <div class="col-md-12">
+    <nb-card>
+        <nb-card-header>Add Movie</nb-card-header>
+        <nb-card-body>
+            <form [formGroup]="categoryForm">
+                <div class="input-group row">
+                    <div class="col-md-3">
+                        <label for="">
+                            Category Name
+                        </label>
+                    </div>
+                    <input type="text" placeholder="Category Name" class="form-control" formControlName="category_name" />
+                </div>
+                
+                <div class="input-group row">
+                        <div class="col-md-3">
+                            <label for="">
+                                Category Description
+                            </label>
+                        </div>
+                        <textarea rows="3" placeholder="Category Description" class="form-control" formControlName="meta_description"></textarea>
+                    </div>
+
+              
+
+
+              
+             
+
+              
+                <input style="float:right;" type="submit" class="btn btn-hero-success" (click)="submitForm()" value="Submit" />
+
+
+
+            </form>
+
+        </nb-card-body>
+    </nb-card>
+</div>
+</div>

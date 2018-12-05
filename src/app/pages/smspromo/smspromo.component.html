@@ -1,0 +1,36 @@
+<div class="col-md-12">
+  <div class="col-md-12">
+    <nb-card>
+        <nb-card-header>Single Mail</nb-card-header>
+        <nb-card-body>
+            <form [formGroup]="smsForm">
+                
+                
+               
+
+                    <div class="input-group row">
+                      <div class="col-md-3">
+                          <label for="">
+                             SMSs Body
+                          </label>
+                      </div>
+                      <textarea rows="3" placeholder="SMS Body" class="form-control" formControlName="body"></textarea>
+                  </div>
+
+              
+
+
+              
+             
+
+              
+                <input style="float:right;" type="submit" class="btn btn-hero-success" (click)="submitForm()" value="Submit" />
+
+
+
+            </form>
+
+        </nb-card-body>
+    </nb-card>
+</div>
+</div>

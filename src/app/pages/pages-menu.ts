@@ -2,15 +2,92 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'nb-e-commerce',
+    title: 'Dashboard',
+    icon: 'nb-list',
     link: '/pages/dashboard',
-    home: true,
+    children: [
+      {
+        title: 'General',
+        link: '/path/iot-dashboard'
+      },
+      {
+        title: 'Statistics',
+       link: '/path/dashboard'
+      }
+    ]
+  },  
+  {
+    title: 'Movies',
+    icon: 'nb-play-outline',
+    children: [
+      {
+        title: 'Add Movies',
+        link: '/pages/addmedia',
+        icon: 'nb-plus'
+      },
+      {
+        title: 'View Movies',
+        link: '/pages/viewmedia',
+        icon: 'nb-list'
+      },
+     
+    ]
   },
   {
-    title: 'IoT Dashboard',
-    icon: 'nb-home',
-    link: '/pages/iot-dashboard',
+    title: 'User Management',
+    icon: 'nb-person',
+    children: [
+      {
+        title: 'Create User',
+        icon: 'nb-plus'
+      },
+      {
+        title: 'View Users',
+        icon: 'nb-list',
+        link: '/pages/viewusers'
+      }
+    ]
+
+  },
+  {
+    title: 'Website Interface',
+    icon: 'nb-tables',
+    children: [
+      {
+        title: 'Jumbotron Slider',
+        link: '/pages/editcarousel'     
+      },
+      {
+        title: 'Categories',
+        link: '/pages/addcategory'
+      },
+
+    ]
+  },
+  
+  {
+    title: 'Mailing Service',
+    icon: 'nb-email',
+    children: [{
+      title: 'Single',
+      link: '/pages/singlemail'
+
+
+    },
+    {
+      title: 'Multiple',
+      link: '/pages/multiplemail'
+    }]
+  },
+
+  {
+    title: 'SMS promo',
+    link: '/pages/smspromo',  
+    icon: 'nb-paper-plane'
+  },
+  {
+    title: 'Payments',
+    icon: 'nb-compose',
   },
   {
     title: 'FEATURES',
@@ -68,114 +145,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/forms/layouts',
       },
     ],
-  },
-  {
-    title: 'Components',
-    icon: 'nb-gear',
-    children: [
-      {
-        title: 'Tree',
-        link: '/pages/components/tree',
-      }, {
-        title: 'Notifications',
-        link: '/pages/components/notifications',
-      },
-    ],
-  },
-  {
-    title: 'Maps',
-    icon: 'nb-location',
-    children: [
-      {
-        title: 'Google Maps',
-        link: '/pages/maps/gmaps',
-      },
-      {
-        title: 'Leaflet Maps',
-        link: '/pages/maps/leaflet',
-      },
-      {
-        title: 'Bubble Maps',
-        link: '/pages/maps/bubble',
-      },
-      {
-        title: 'Search Maps',
-        link: '/pages/maps/searchmap',
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    icon: 'nb-bar-chart',
-    children: [
-      {
-        title: 'Echarts',
-        link: '/pages/charts/echarts',
-      },
-      {
-        title: 'Charts.js',
-        link: '/pages/charts/chartjs',
-      },
-      {
-        title: 'D3',
-        link: '/pages/charts/d3',
-      },
-    ],
-  },
-  {
-    title: 'Editors',
-    icon: 'nb-title',
-    children: [
-      {
-        title: 'TinyMCE',
-        link: '/pages/editors/tinymce',
-      },
-      {
-        title: 'CKEditor',
-        link: '/pages/editors/ckeditor',
-      },
-    ],
-  },
-  {
-    title: 'Tables',
-    icon: 'nb-tables',
-    children: [
-      {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
-      },
-    ],
-  },
-  {
-    title: 'Miscellaneous',
-    icon: 'nb-shuffle',
-    children: [
-      {
-        title: '404',
-        link: '/pages/miscellaneous/404',
-      },
-    ],
-  },
-  {
-    title: 'Auth',
-    icon: 'nb-locked',
-    children: [
-      {
-        title: 'Login',
-        link: '/auth/login',
-      },
-      {
-        title: 'Register',
-        link: '/auth/register',
-      },
-      {
-        title: 'Request Password',
-        link: '/auth/request-password',
-      },
-      {
-        title: 'Reset Password',
-        link: '/auth/reset-password',
-      },
-    ],
-  },
+  }
 ];

@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let item of media_items">
+        <nb-card>
+            <div class="content" style="height:480px;">
+                <img src="http://placehold.it/336x200" style="border-radius:10px" />
+                <nb-card-header><h4 style="margin-top:10px">Media Title</h4></nb-card-header>
+                
+                    <!-- <h3>{{item.media_name}}</h3>        
+         -->
+                    <nb-card-body style="text-align:left;">
+                            <p style="margin:16px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                    
+                            </p>
+                    </nb-card-body>
+                   
+                    
+                    <nb-card-footer>
+                            <div class="row" style="text-align:center">
+                                    <div class="col-md-4">
+                                        <button class="btn btn-hero-primary" (click)="edit(item.id)">
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-hero-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+            
+                                </div>
+                    </nb-card-footer>
+      
+
+
+
+
+
+
+
+            </div>
+
+
+        </nb-card>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="col-md-12">
+    <div class="col-md-12">
+      <nb-card>
+          <nb-card-header>Single Mail</nb-card-header>
+          <nb-card-body>
+              <form [formGroup]="mailingForm">
+                  <div class="input-group row">
+                      <div class="col-md-3">
+                          <label for="">
+                              Email Address
+                          </label>
+                      </div>
+                      <input type="text" placeholder="Email Address" class="form-control" formControlName="email_address" />
+                  </div>
+                  
+                  <div class="input-group row">
+                          <div class="col-md-3">
+                              <label for="">
+                                  Subject
+                              </label>
+                          </div>
+                          <input type="text" placeholder="Subject" class="form-control" formControlName="subject" />
+                      </div>
+  
+                      <div class="input-group row">
+                        <div class="col-md-3">
+                            <label for="">
+                                Email Body
+                            </label>
+                        </div>
+                        <textarea rows="3" placeholder="Email Body" class="form-control" formControlName="body"></textarea>
+                    </div>
+
+                
+  
+  
+                
+               
+  
+                
+                  <input style="float:right;" type="submit" class="btn btn-hero-success" (click)="submitForm()" value="Submit" />
+  
+  
+  
+              </form>
+  
+          </nb-card-body>
+      </nb-card>
+  </div>
+  </div>
